@@ -1,6 +1,8 @@
 @import '../../styles/utils/colors';
 
 .submitButton{
+  display: flex;
+  align-items: center;
   text-align: center;
   color: white;
   line-height: 50px;
@@ -14,4 +16,20 @@
   &--inactive{
     background-color: $elephant-paw;
   }
+  
+  &--loadingIcon {
+    height: 20px;
+    padding: 2px;
+    animation: rotation 2s infinite linear
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 }
