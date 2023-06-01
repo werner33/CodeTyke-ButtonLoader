@@ -14,7 +14,7 @@
   "scripts": {
     "postinstall": "cd backendServer && npm install",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "client": "react-scripts --openssl-legacy-provider start",
+    "client": "react-scripts start",
     "server": "cd backendServer && npm start",
     "build": "react-scripts build",
     "test": "react-scripts test",
